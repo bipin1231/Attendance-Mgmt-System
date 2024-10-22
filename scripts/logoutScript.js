@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $(".logout").click(function(){
+        $(".popupConfirmLogout").toggle(300);
+    });
+});
+$(document).ready(function(){
+    $(".no-btn").click(function(){
+        $(".popupConfirmLogout").hide(300);
+    });
+});
+// change username
+$(document).ready(function(){
+    $(".change-username").click(function(){
+        $(".popupChangeUsername").toggle(300);
+    });
+});
+$(document).ready(function(){
+    $(".closePopup").click(function(){
+        $(".popupChangeusername").hide(300);
+    });
+});

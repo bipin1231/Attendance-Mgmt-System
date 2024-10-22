@@ -1,0 +1,67 @@
+body {
+    animation: light-theme 0.8s ease backwards;
+  }
+:root{
+    --homePageBG: linear-gradient(180deg, rgba(125,0,255,1) 0%, rgba(0,2,73,1) 100%);
+    --primaryColor: rgb(93, 63, 211);
+    --secondaryColor: rgb(125, 249, 255);
+    --textColor: black;
+    --iconColor: rgb(93, 63, 211);
+    --sidebarColor: white;
+    --cardColor: white;
+    --hoverColor: white;
+    --dropDownColor: white;
+    --contentColor: white;
+    --tableHeaderColor: rgb(93, 63, 211);
+    --btnColor: rgb(93, 63, 211);
+    --mobLogInNavBarColor: rgb(131, 100, 255);
+    --mobLogInFormBG: rgb(61, 33, 174);
+    --yesBGColor: rgb(93, 63, 211);
+    --noBGColor: red;
+    --borderColor: none;
+}
+body.dark-theme{
+    animation: night-theme 0.5s ease forwards;
+    --homePageBG: black;
+    --primaryColor: black;
+    --secondaryColor: white;
+    --textColor: white;
+    --iconColor: white;
+    --sidebarColor: black;
+    --cardColor: black;
+    --hoverColor: rgb(60, 59, 59);
+    --dropDownColor: rgb(60, 59, 59);
+    --contentColor: rgb(60, 59, 59);
+    --tableHeaderColor: black;
+    --btnColor: rgb(60, 59, 59);
+    --mobLogInNavBarColor: #535353;
+    --mobLogInFormBG: black;
+    --yesBGColor: black;
+    --noBGColor: black;
+    --borderColor: white;
+}
+@keyframes light-theme {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes night-theme {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.lightMode{
+    display: none;
+}
+.theme-text .lightMode{
+    display: block;
+}
+.theme-text .nightMode{
+    display: none;
+}
